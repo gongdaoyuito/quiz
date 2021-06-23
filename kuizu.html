@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>quizu</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <meta name="theme-color" content="#fafafa">
+    <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="kuizu.css">
+</head>
+
+<body>
+    <audio id="sound-file" preload="auto">
+        <source src="Quiz-Wrong_Buzzer01-1.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound-file2" preload="auto">
+        <source src="Quiz-Correct_Answer02-1.mp3" type="audio/mp3">
+    </audio>
+    <div>
+        <script src="kuizu.js"></script>
+    </div>
+    <div id="modal-main">不正解!</div>
+    <div id="modal-main2">正解!</div>
+    <div class="container">
+
+        <div id="daimei" class="alert alert-info" role="alert">
+            ６.安全できれいな水とトイレを世界中に
+        </div>
+    </div>
+    <div  style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/F1ArhyytBlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    
+    <a href="https://gongdaoyuito.github.io/3Gproject2/">次へ進む</a>
+    <div class="container">
+
+        <div id="js-question" class="mt-3 alert alert-primary" role="alert">
+            SDGsとは次のうちどれ？
+        </div>
+
+        <div class="d-flex justify-content-center" >
+            <button id="iti" type="button" class="btn btn-primary" onClick="sound()">世界が目指す開発基準</button>
+            <button id="ni" type="button" class="ml-1 btn btn-primary" onClick="sound2()">世界が目指す持続可能な開発目標</button>
+            <button id="san" type="button" class="ml-1 btn btn-primary" onClick="sound()">世界の組織の名前</button>
+            <button id="yon" type="button" class="ml-1 btn btn-primary" onClick="sound()">世界のルール</button>
+            
+        </div>
+
+        <div id="js-question2" class="mt-3 alert alert-primary" role="alert">
+            ゲーム市場、最も売れたゲーム機は次のうちどれ？
+        </div>
+
+        <div class="d-flex justify-content-center" >
+            <button id="go" type="button" class="btn btn-primary">スーパーファミコン</button>
+            <button id="roku" type="button" class="ml-1 btn btn-primary">プレーステーション２</button>
+            <button id="nana" type="button" class="ml-1 btn btn-primary">ニンテンドースイッチ</button>
+            <button id="hati" type="button" class="ml-1 btn btn-primary">ニンテンドーDS</button>
+            
+        </div>
+        <div class="seigohanntei">正誤判定</div>
+    </div>
+
+
+</body>
+
+</html>
